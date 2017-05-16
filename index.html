@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+      <title>Comenzando con la Fotografía</title>
+      <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+      <div id="wrapper">
+        <header>
+          <h1 class="titulo">Comenzando con la Fotografía</h1>
+          <nav id="menu">
+            <ul class="navbar">
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a class="noactive" href="Paisajes.html">Paisajes</a></li>
+                <li><a class="noactive" href="Retratos.html">Retratos</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section id="img-principal">
+          <picture>
+            <source media="(min-width:900px)" srcset="images/paisaje.jpg">
+            <source media="(min-width:480px)" srcset="images/paisaje.jpg">
+            <img src=images/paisaje.jpg width="100%">
+          </picture>
+        </section>
+        <section id="img-secundarias">
+          <figure class="colum1">
+            <img src="images/playa.jpg" alt="Paisajes" width="100%" >
+            <figcaption><a href="Paisajes.html">Paisajes</a></figcaption>
+          </figure>
+          </figure>
+          <figure class="colum2">
+            <img  src="images/retrato.jpg" alt="Retratos" width="100%">
+            <figcaption><a href="Retratos.html">Restratos</a></figcaption>
+          </figure>
+        </section>
+        <footer>
+          <div class="contacto">
+            <h2>Contacto</h2>
+            <a href="vanenikylopezch@hotmail.com">vanenikylopezch@hotmail.com</a>
+            <p>Av. Mariscal Sucre y el canelo 102</p>
+            <p> Teléfono: 0987793263</p>
+          </div>
+          <div class="termino">
+            <h2>Términos</h2>
+            <p>Acerca de nuestros términos y condiciones
+          </div>
+          <div class="redes">
+            <h2>Redes Sociales</h2>
+            <p>Comparte y conocenos más en nuestras redes sociales</p>
+            <ul class="list_icons">
+              <li><img src="images/facebook.png" width="30px"> Fotografía básica</li>
+              <li><img src="images/instagram.png" width="30px">@Fotografía básica</li>
+              <li><img src="images/snapchat.png" width="30px">@Fotografía básica</li>
+            </ul>
+          </div>
+          <div class="derechos">
+            <h2> Derechos</h2>
+            <p>@Copyright-2017</p>
+          </div>
+        </footer>
+    </div>
+    </body>
+  </html>

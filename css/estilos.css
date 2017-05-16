@@ -1,0 +1,480 @@
+@font-face {
+  font-family: "DancingScript-Regular";
+  src: url("DancingScript-Regular.otf");
+}
+body{
+  background: #02010a;
+  color: #ffffff;
+  font-family:"DancingScript-Regular";
+}
+
+
+header{
+  background-color: #5b7989;
+  padding: 2%;
+  border-radius: 10px 10px 0 0;
+}
+
+header .titulo{
+  width:50%;
+  margin-top: auto;
+  text-shadow: 2px 2px 1px #02010a;
+  float: left;
+}
+
+#menu .navbar{
+  margin-top: auto;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  list-style: none none;
+ /*  float:right; */
+}
+
+.active{
+	color:white;
+	text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.noactive{
+  color: white;
+  padding: 10px;
+  text-decoration:underline;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#img-principal{
+  background-color: #82c3a6;
+  padding: 3em;
+}
+
+#img-secundarias{
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #d5c75f;
+  }
+
+figure [class*="colum"]{
+min-height: 200px;
+flex: 3 1 50%
+}
+
+.colum1 img{
+  -webkit-filter:drop-shadow(2px 2px 1px #02010a);
+  -moz-filter:drop-shadow(2px 2px 1px #02010a);
+  filter: drop-shadow(2px 2px 1px #02010a);
+  border: solid 1px  #02010a;
+  order:1;
+}
+
+.colum2 img{
+  -webkit-filter:drop-shadow(2px 2px 1px #02010a);
+  -moz-filter:drop-shadow(2px 2px 1px #02010a);
+  filter: drop-shadow(2px 2px 1px #02010a);
+  border: solid 1px  #02010a;
+  order:2;
+}
+
+.colum1 img:hover{
+  transform: rotate(10deg);
+  -webkit-filter:drop-shadow(2px 3px 1px #82c3a6);
+  -moz-filter:drop-shadow(2px 3px 1px #82c3a6);
+  filter: drop-shadow(2px 3px 1px #82c3a6);
+  border: 2px solid #82c3a6;
+}
+
+.colum2 img:hover{
+  transform: translate(20px, -5px);
+  -webkit-filter:drop-shadow(2px 2px 1px #82c3a6);
+  -moz-filter:drop-shadow(2px 2px 1px #82c3a6);
+  filter: drop-shadow(2px 2px 1px #82c3a6);
+  border: 2px solid #82c3a6;
+}
+
+figcaption{
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  padding: 3px;
+}
+
+footer{
+background-color: #C6d5c5;
+padding-left: 50px;
+padding-bottom: 10px;
+border-radius: 0 0 10px 10px;
+display: flex;
+flex-direction: colum;
+}
+
+.contacto{
+	width:25%;
+  padding-right: 30px;
+}
+.termino{
+	width:25%;
+  padding-right: 30px;
+}
+.redes{
+	width:25%;
+  padding-right: 30px;
+}
+.derechos{
+	width:25%;
+  padding-right: 30px;
+	}
+.derechos p{
+	text-align:center;
+}
+a{
+color:#000000;
+text-align:left;
+font-size: 18px;
+}
+@media screen and (min-width:900px){
+#wrapper{
+	width: 900px;
+	margin:auto;
+  animation: miAnimacion 1s
+}
+
+@-moz-keyframes miAnimacion{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top:0%;
+  }
+}
+
+  #menu .active{
+    padding: 10px;
+  }
+
+  li {
+  	color:#000000;
+  }
+  h2{
+  font-size: 2em;
+  text-align:center;
+  color:#000000;
+  }
+
+  p{
+    font-size: 18px;
+  	text-align:left;
+  	color:#000000;
+  }
+  .list_icons{
+  	margin-left:-40px;
+  	list-style:none;
+  }
+  /*inicio retratos y paisajes*/
+  #fotos{
+    background-color: #d5c75f;
+    display: flex;
+    flex-direction: column;
+  }
+    .contenedor {
+    display: flex;
+    flex-direction: row;
+  }
+  .contenedor > div {
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+  }
+  #imagen>img{
+  width: 250px;
+  }
+  .first{
+    -webkit-filter:blur(10px);
+    -moz-filter:blur(10px);
+    filter:blur(10px);
+  }
+  .second{
+    -webkit-filter:grayscale(100%);
+    -moz-filter:grayscale(100%);
+    filter:grayscale(100%);
+  }
+  .third{
+    -webkit-filter:sepia(90%);
+    -moz-filter:sepia(90%);
+    filter: sepia(90%);
+  }
+  /*final retratos y paisaje*/
+}
+@media (min-width:481px) and (max-width:899px){
+  #wrapper
+    {
+    width: 100%;
+    margin: 0 auto;
+    animation: miAnimacion 1s
+    }
+
+    @-moz-keyframes miAnimacion{
+      0%{
+        margin-top: 150%;
+      }
+      60%{
+        margin-top: -5%;
+      }
+      100%{
+        margin-top:0%;
+      }
+    }
+    header
+    {
+    width:100%;
+    padding: 0 0 2% 0;   }
+    header .titulo{
+    text-shadow: 2px 2px 1px #02010a;
+    width:100%;
+    margin-top: 10px;
+    text-align:center;
+    }
+    li {
+    	color:#000000;
+    }
+    .navbar{
+      width:100%;
+      position: relative;
+      margin-left: 30%;
+      }
+    #img-principal{
+      width: auto;
+      padding: 2em;
+    }
+
+    #img-principal >img{
+      width: 100%;
+    }
+    #img-secundarias{
+      background-color: #d5c75f;
+      border: 1px;
+      padding: 1em 0 1em 0;
+      display: block;
+    }
+
+    footer{
+
+    background-color: #C6d5c5;
+    padding-left:  10%;
+    boder-radius: 0 0 10px 10px;
+    display: flex;
+    flex-flow: wrap;
+    }
+    h2{
+    font-size: 2em;
+    text-align:left;
+    color:#000000;
+    }
+
+    p{
+      font-size: 15px;
+    	text-align:left;
+    	color:#000000;
+    }
+    .list_icons{
+    	margin-left:-40px;
+    	list-style:none;
+    }
+    .contacto{
+    	width:100%;
+    }
+
+    .termino{
+    	width:100%;
+      padding-right: 30px;
+    }
+
+    .redes{
+    	width:100%;
+      padding-right: 30px;
+    }
+
+    .derechos{
+    	width:100%;
+      position: inherit;
+    	}
+    .derechos p{
+    	text-align:left;
+    }
+    /*inicio retratos y paisajes*/
+    #fotos{
+      background-color: #d5c75f;
+      display: flex;
+      flex-direction: column;
+    }
+      .contenedor {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .contenedor > div {
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+    }
+    #imagen>img{
+    width: 100%;
+    }
+    .first{
+      -webkit-filter:blur(10px);
+      -moz-filter:blur(10px);
+      filter:blur(10px);
+    }
+    .second{
+      -webkit-filter:grayscale(100%);
+      -moz-filter:grayscale(100%);
+      filter:grayscale(100%);
+    }
+    .third{
+      -webkit-filter:sepia(90%);
+      -moz-filter:sepia(90%);
+      filter: sepia(90%);
+    }
+    /*final retratos y paisajes*/
+}
+
+@media all and (max-width: 480px){
+  #wrapper
+    {
+    width: 100%;
+    margin: 0 auto;
+    animation: miAnimacion 1s
+    }
+
+    @-moz-keyframes miAnimacion{
+      0%{
+        margin-top: 150%;
+      }
+      60%{
+        margin-top: -5%;
+      }
+      100%{
+        margin-top:0%;
+      }
+    }
+    header
+    {
+    width:100%;
+    padding: 0 0 2% 0;   }
+    header .titulo{
+    text-shadow: 2px 2px 1px #02010a;
+    width:100%;
+    margin-top: 20px;
+    text-align:center;
+    }
+    li {
+      color:#000000;
+    }
+    #menu .active{
+      padding: 10px;
+    }
+    .navbar{
+      width:100%;
+      margin-left: -15px;
+      padding-left: 15%;
+
+      }
+    #img-principal{
+      width: auto;
+      padding: 2em;
+    }
+
+    #img-principal >img{
+      width: 100%;
+    }
+    #img-secundarias{
+      background-color: #d5c75f;
+      border: 1px;
+      padding: 1em 0 1em 0;
+      display: block;
+    }
+
+    footer{
+    background-color: #C6d5c5;
+    padding-left:  10%;
+    boder-radius: 0 0 10px 10px;
+    display: flex;
+    flex-flow: wrap;
+    }
+    h2{
+    font-size: 2em;
+    text-align:left;
+    color:#000000;
+    }
+
+    p{
+      font-size: 15px;
+      text-align:left;
+      color:#000000;
+    }
+    .list_icons{
+      margin-left:-40px;
+      list-style:none;
+    }
+    .contacto{
+      width:100%;
+    }
+
+    .termino{
+      width:100%;
+      padding-right: 30px;
+    }
+
+    .redes{
+      width:100%;
+      padding-right: 30px;
+    }
+
+    .derechos{
+      width:100%;
+      position: inherit;
+      }
+    .derechos p{
+      text-align:left;
+    }
+      /*inicio retratos*/
+    #fotos{
+      background-color: #d5c75f;
+      display: flex;
+      flex-direction: column;
+    }
+      .contenedor {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .contenedor > div {
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+    }
+    #imagen>img{
+    width: 100%;
+    }
+    .first{
+      -webkit-filter:blur(10px);
+      -moz-filter:blur(10px);
+      filter:blur(10px);
+    }
+    .second{
+      -webkit-filter:grayscale(100%);
+      -moz-filter:grayscale(100%);
+      filter:grayscale(100%);
+    }
+    .third{
+      -webkit-filter:sepia(90%);
+      -moz-filter:sepia(90%);
+      filter: sepia(90%);
+    }
+    /*final retratos*/
+}
